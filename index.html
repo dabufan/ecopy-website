@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecopy - 智能剪贴板管理器</title>
+    <title>Ecopy - 智能剪贴板管理器</title>
     <style>
         * {
             margin: 0;
@@ -232,13 +232,14 @@
             background: #000;
         }
 
-        .video-container iframe {
+        .video-container video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             border: none;
+            object-fit: cover;
         }
 
         /* Footer */
@@ -359,7 +360,7 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo">ecopy</a>
+                <a href="#" class="logo">Ecopy</a>
                 <ul class="nav-links">
                     <li><a href="#features">功能</a></li>
                     <li><a href="support.html">支持</a></li>
@@ -376,7 +377,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>ecopy</h1>
+            <h1>Ecopy</h1>
             <p class="subtitle">智能剪贴板管理器</p>
             <p class="description">
                 让您再也不会丢失重要的复制内容。智能监听剪贴板变化，自动分类管理文字、图片、文件记录，提升您的工作效率。
@@ -393,15 +394,13 @@
         <div class="container">
             <div class="demo-content">
                 <h2>产品演示</h2>
-                <p>观看ecopy的实际使用效果，了解如何轻松管理您的剪贴板内容</p>
+                <p>观看Ecopy的实际使用效果，了解如何轻松管理您的剪贴板内容</p>
                 <div class="video-container">
-                    <iframe src="https://www.youtube-nocookie.com/embed/Nn3wsUMTv1s?rel=0&modestbranding=1&showinfo=0&origin=https://ecopy-website.vercel.app" 
-                            title="ecopy产品演示" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin">
-                    </iframe>
+                    <video controls width="100%" height="100%" style="border-radius: 20px;">
+                        <source src="Ecopy.mov" type="video/quicktime">
+                        <source src="Ecopy.mov" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
                 </div>
             </div>
         </div>
@@ -454,7 +453,7 @@
                 <a href="privacy.html">隐私政策</a>
                 <a href="mailto:dabufan@gmail.com">联系我们</a>
             </div>
-            <p>&copy; 2025 ecopy. All rights reserved.</p>
+            <p>&copy; 2025 Ecopy. All rights reserved.</p>
         </div>
     </footer>
 
@@ -464,7 +463,7 @@
         <p>独立开发者</p>
         <div class="floating-card-links">
             <a href="https://x.com/leexinq" target="_blank">X</a>
-            <a href="https://babydu.vercel.app/" target="_blank">主页</a>
+            <a href="https://www.babydu.cn" target="_blank">主页</a>
         </div>
     </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecopy - Smart Clipboard Manager</title>
+    <title>Ecopy - Smart Clipboard Manager</title>
     <style>
         * {
             margin: 0;
@@ -232,13 +232,14 @@
             background: #000;
         }
 
-        .video-container iframe {
+        .video-container video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             border: none;
+            object-fit: cover;
         }
 
         /* Footer */
@@ -359,7 +360,7 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo">ecopy</a>
+                <a href="#" class="logo">Ecopy</a>
                 <ul class="nav-links">
                     <li><a href="#features">Features</a></li>
                     <li><a href="support-en.html">Support</a></li>
@@ -376,7 +377,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>ecopy</h1>
+            <h1>Ecopy</h1>
             <p class="subtitle">Smart Clipboard Manager</p>
             <p class="description">
                 Never lose important copied content again. Intelligently monitor clipboard changes, automatically categorize and manage text, image, and file records to boost your productivity.
@@ -393,15 +394,13 @@
         <div class="container">
             <div class="demo-content">
                 <h2>Product Demo</h2>
-                <p>Watch ecopy in action and learn how to easily manage your clipboard content</p>
+                <p>Watch Ecopy in action and learn how to easily manage your clipboard content</p>
                 <div class="video-container">
-                    <iframe src="https://www.youtube-nocookie.com/embed/Nn3wsUMTv1s?rel=0&modestbranding=1&showinfo=0&origin=https://ecopy-website.vercel.app" 
-                            title="ecopy Product Demo" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin">
-                    </iframe>
+                    <video controls width="100%" height="100%" style="border-radius: 20px;">
+                        <source src="Ecopy.mov" type="video/quicktime">
+                        <source src="Ecopy.mov" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
                 </div>
             </div>
         </div>
@@ -454,7 +453,7 @@
                 <a href="privacy-en.html">Privacy Policy</a>
                 <a href="mailto:dabufan@gmail.com">Contact Us</a>
             </div>
-            <p>&copy; 2025 ecopy. All rights reserved.</p>
+            <p>&copy; 2025 Ecopy. All rights reserved.</p>
         </div>
     </footer>
 
@@ -464,7 +463,7 @@
         <p>Independent Developer</p>
         <div class="floating-card-links">
             <a href="https://x.com/leexinq" target="_blank">X</a>
-            <a href="https://babydu.vercel.app/" target="_blank">Homepage</a>
+            <a href="https://www.babydu.cn" target="_blank">Homepage</a>
         </div>
     </div>
 </body>
