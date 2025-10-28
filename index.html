@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Ecopy.svg">
     <title>Ecopy - 智能剪贴板管理器</title>
     <style>
         * {
@@ -88,6 +88,77 @@
             padding: 120px 0 80px;
             text-align: center;
             color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image {
+            position: absolute;
+            right: -300px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            max-width: 300px;
+            opacity: 0.8;
+            animation: slideInOut 8s ease-in-out infinite;
+        }
+
+        .hero-image-left {
+            position: absolute;
+            left: -300px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            max-width: 300px;
+            opacity: 0.8;
+            animation: slideInOutLeft 10s ease-in-out infinite;
+        }
+
+        .hero-image-left img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slideInOutLeft {
+            0% {
+                left: -300px;
+                opacity: 0;
+            }
+            20% {
+                left: 0;
+                opacity: 0.8;
+            }
+            80% {
+                left: 0;
+                opacity: 0.8;
+            }
+            100% {
+                left: -300px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes slideInOut {
+            0% {
+                right: -300px;
+                opacity: 0;
+            }
+            20% {
+                right: 0;
+                opacity: 0.8;
+            }
+            80% {
+                right: 0;
+                opacity: 0.8;
+            }
+            100% {
+                right: -300px;
+                opacity: 0;
+            }
         }
 
         .hero h1 {
@@ -183,8 +254,7 @@
         }
 
         .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            display: none;
         }
 
         .feature-card h3 {
@@ -333,6 +403,14 @@
                 font-size: 2.5rem;
             }
 
+            .hero-image {
+                display: none;
+            }
+
+            .hero-image-left {
+                display: none;
+            }
+
             .nav-links {
                 display: none;
             }
@@ -360,7 +438,10 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo">Ecopy</a>
+                <a href="#" class="logo">
+                    <img src="Ecopy.svg" alt="Ecopy" style="width: 32px; height: 32px; margin-right: 10px; vertical-align: middle;">
+                    Ecopy
+                </a>
                 <ul class="nav-links">
                     <li><a href="#features">功能</a></li>
                     <li><a href="support.html">支持</a></li>
@@ -377,14 +458,24 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Ecopy</h1>
-            <p class="subtitle">智能剪贴板管理器</p>
-            <p class="description">
-                让您再也不会丢失重要的复制内容。智能监听剪贴板变化，自动分类管理文字、图片、文件记录，提升您的工作效率。
-            </p>
-            <div class="cta-buttons">
-                <a href="https://apps.apple.com/app/ecopy/id6753170496" class="btn btn-primary">立即下载</a>
-                <a href="#features" class="btn btn-secondary">了解更多</a>
+            <div class="hero-image">
+                <img src="meum.png" alt="Ecopy Interface">
+            </div>
+            <div class="hero-image-left">
+                <img src="meum2.png" alt="Ecopy Interface 2">
+            </div>
+            <div class="hero-content">
+                <h1>Ecopy</h1>
+                <p class="subtitle">智能剪贴板管理器</p>
+                <p class="description">
+                    永不丢失你的复制内容<br>
+                    Ecopy 会自动保存你在 Mac 上复制的所有内容——文字、图片或文件，安全存储、智能分类、即时可查。<br>
+                    即使离线，也能轻松访问你的剪贴板历史。
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://apps.apple.com/app/ecopy/id6753170496" class="btn btn-primary">立即下载</a>
+                    <a href="#features" class="btn btn-secondary">了解更多</a>
+                </div>
             </div>
         </div>
     </section>
@@ -412,33 +503,33 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🔄</div>
-                    <h3>智能监听</h3>
-                    <p>自动监听所有复制操作，0.5秒内检测剪贴板变化，支持任何应用的复制操作。</p>
+                    <h3>自动记录并整理复制内容</h3>
+                    <p>智能监听所有复制操作，自动保存文字、图片、文件，按类型智能分类管理。</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📝</div>
-                    <h3>记录管理</h3>
-                    <p>智能识别文字、图片、文件三种类型，自动分类管理，支持多字段搜索。</p>
+                    <div class="feature-icon">🔍</div>
+                    <h3>按标题或内容即时搜索</h3>
+                    <p>快速查找历史记录，支持多字段搜索，让重要内容随时可查。</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>现代界面</h3>
-                    <p>采用SwiftUI构建，支持深色/浅色模式，莫兰迪主题，响应式设计。</p>
+                    <div class="feature-icon">🎯</div>
+                    <h3>智能识别文字、图片和文件</h3>
+                    <p>自动识别不同内容类型，智能分类存储，让剪贴板历史井然有序。</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>多语言支持</h3>
-                    <p>支持26种语言，包括中文、英文、日文、韩文等，满足全球用户需求。</p>
+                    <div class="feature-icon">🛡️</div>
+                    <h3>支持应用自定义排除</h3>
+                    <p>保护敏感信息，可设置特定应用不记录，确保隐私安全。</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
-                    <h3>高级功能</h3>
-                    <p>侧边栏模式、全局快捷键、截图功能、智能设置，提升使用体验。</p>
+                    <div class="feature-icon">⚡</div>
+                    <h3>快速查找并重复使用</h3>
+                    <p>自动去重，置顶常用片段，支持快捷键操作，保持专注高效。</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>隐私保护</h3>
-                    <p>所有数据仅存储在本地设备，不会上传到任何服务器，保护您的隐私安全。</p>
+                    <h3>隐私至上，仅本地存储</h3>
+                    <p>100% 离线，无跟踪、无云端、无泄露，所有数据安全存储在本地。</p>
                 </div>
             </div>
         </div>

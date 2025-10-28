@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Ecopy.svg">
     <title>Ecopy - Smart Clipboard Manager</title>
     <style>
         * {
@@ -88,6 +88,77 @@
             padding: 120px 0 80px;
             text-align: center;
             color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image {
+            position: absolute;
+            right: -300px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            max-width: 300px;
+            opacity: 0.8;
+            animation: slideInOut 8s ease-in-out infinite;
+        }
+
+        .hero-image-left {
+            position: absolute;
+            left: -300px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            max-width: 300px;
+            opacity: 0.8;
+            animation: slideInOutLeft 10s ease-in-out infinite;
+        }
+
+        .hero-image-left img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slideInOutLeft {
+            0% {
+                left: -300px;
+                opacity: 0;
+            }
+            20% {
+                left: 0;
+                opacity: 0.8;
+            }
+            80% {
+                left: 0;
+                opacity: 0.8;
+            }
+            100% {
+                left: -300px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes slideInOut {
+            0% {
+                right: -300px;
+                opacity: 0;
+            }
+            20% {
+                right: 0;
+                opacity: 0.8;
+            }
+            80% {
+                right: 0;
+                opacity: 0.8;
+            }
+            100% {
+                right: -300px;
+                opacity: 0;
+            }
         }
 
         .hero h1 {
@@ -183,8 +254,7 @@
         }
 
         .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            display: none;
         }
 
         .feature-card h3 {
@@ -333,6 +403,14 @@
                 font-size: 2.5rem;
             }
 
+            .hero-image {
+                display: none;
+            }
+
+            .hero-image-left {
+                display: none;
+            }
+
             .nav-links {
                 display: none;
             }
@@ -360,7 +438,10 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo">Ecopy</a>
+                <a href="#" class="logo">
+                    <img src="Ecopy.svg" alt="Ecopy" style="width: 32px; height: 32px; margin-right: 10px; vertical-align: middle;">
+                    Ecopy
+                </a>
                 <ul class="nav-links">
                     <li><a href="#features">Features</a></li>
                     <li><a href="support-en.html">Support</a></li>
@@ -377,14 +458,24 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Ecopy</h1>
-            <p class="subtitle">Smart Clipboard Manager</p>
-            <p class="description">
-                Never lose important copied content again. Intelligently monitor clipboard changes, automatically categorize and manage text, image, and file records to boost your productivity.
-            </p>
-            <div class="cta-buttons">
-                <a href="https://apps.apple.com/app/ecopy/id6753170496" class="btn btn-primary">Download Now</a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
+            <div class="hero-image">
+                <img src="meum.png" alt="Ecopy Interface">
+            </div>
+            <div class="hero-image-left">
+                <img src="meum2.png" alt="Ecopy Interface 2">
+            </div>
+            <div class="hero-content">
+                <h1>Ecopy</h1>
+                <p class="subtitle">Smart Clipboard Manager</p>
+                <p class="description">
+                    Never lose your copied content<br>
+                    Ecopy automatically saves all content you copy on Mac—text, images, or files—with secure storage, smart categorization, and instant access.<br>
+                    Even offline, easily access your clipboard history.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://apps.apple.com/app/ecopy/id6753170496" class="btn btn-primary">Download Now</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -412,33 +503,33 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🔄</div>
-                    <h3>Smart Monitoring</h3>
-                    <p>Automatically monitor all copy operations, detect clipboard changes within 0.5 seconds, support copy operations from any application.</p>
+                    <h3>Auto-record and Organize</h3>
+                    <p>Intelligently monitor all copy operations, automatically save text, images, files, and categorize by type.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📝</div>
-                    <h3>Record Management</h3>
-                    <p>Intelligently identify text, image, and file types, automatically categorize and manage, support multi-field search.</p>
+                    <div class="feature-icon">🔍</div>
+                    <h3>Instant Search by Title or Content</h3>
+                    <p>Quickly find historical records with multi-field search, keeping important content always accessible.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Modern Interface</h3>
-                    <p>Built with SwiftUI, support dark/light mode, Morandi theme, responsive design.</p>
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Recognition</h3>
+                    <p>Automatically identify different content types, intelligently categorize storage, keeping clipboard history organized.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Multi-language Support</h3>
-                    <p>Support 26 languages including Chinese, English, Japanese, Korean, etc., meeting global user needs.</p>
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Custom App Exclusion</h3>
+                    <p>Protect sensitive information by setting specific apps to not record, ensuring privacy and security.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
-                    <h3>Advanced Features</h3>
-                    <p>Sidebar mode, global shortcuts, screenshot function, smart settings to enhance user experience.</p>
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Find and Reuse</h3>
+                    <p>Auto-deduplication, pin frequently used snippets, support keyboard shortcuts for focused efficiency.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>Privacy Protection</h3>
-                    <p>All data is stored locally on your device only, never uploaded to any server, protecting your privacy and security.</p>
+                    <h3>Privacy First, Local Storage</h3>
+                    <p>100% offline, no tracking, no cloud, no leaks—all data securely stored locally.</p>
                 </div>
             </div>
         </div>
