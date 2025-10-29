@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="Ecopy.svg">
     <title>Ecopy - 智能剪贴板管理器</title>
     <style>
@@ -399,29 +400,96 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
             }
 
-            .hero-image {
-                display: none;
+            .hero .subtitle {
+                font-size: 1.1rem;
             }
 
-            .hero-image-left {
-                display: none;
+            .hero .description {
+                font-size: 1rem;
+                padding: 0 10px;
             }
 
             .nav-links {
                 display: none;
             }
 
+            .lang-switcher {
+                gap: 0.3rem;
+            }
+
+            .lang-switcher a {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+
             .cta-buttons {
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
+                gap: 0.8rem;
+                justify-content: center;
+            }
+
+            .btn {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+                flex: 1;
+                max-width: 140px;
+                text-align: center;
+            }
+
+            .features {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
             }
 
             .features-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .demo {
+                padding: 60px 0;
+            }
+
+            .demo h2 {
+                font-size: 2rem;
+            }
+
+            .demo p {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+
+            .footer {
+                padding: 1.5rem 0;
+            }
+
+            .footer-links {
+                gap: 1rem;
             }
 
             .floating-card {
@@ -429,6 +497,53 @@
                 right: 15px;
                 max-width: 250px;
                 padding: 12px 15px;
+            }
+        }
+
+        /* Mobile: Hide animations and optimize layout */
+        @media (max-width: 768px) {
+            .hero-image {
+                display: none; /* Hide animations on mobile */
+            }
+            .hero-image-left {
+                display: none; /* Hide animations on mobile */
+            }
+            
+            /* Additional mobile optimizations */
+            .hero-content {
+                padding: 0 10px;
+            }
+            
+            .video-container {
+                margin: 0 10px;
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+            
+            .hero .description {
+                font-size: 0.9rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .demo h2 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.9rem;
             }
         }
     </style>
