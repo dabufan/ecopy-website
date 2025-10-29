@@ -4,62 +4,62 @@
     
     <!-- Chinese Homepage -->
     <url>
-        <loc>https://ecopy.app/</loc>
+        <loc>https://ecopy.babydu.cn/</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.app/index-en.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.babydu.cn/index-en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.babydu.cn/"/>
     </url>
     
     <!-- English Homepage -->
     <url>
-        <loc>https://ecopy.app/index-en.html</loc>
+        <loc>https://ecopy.babydu.cn/index-en.html</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.app/index-en.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.babydu.cn/index-en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.babydu.cn/"/>
     </url>
     
     <!-- Chinese Support Page -->
     <url>
-        <loc>https://ecopy.app/support.html</loc>
+        <loc>https://ecopy.babydu.cn/support.html</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.app/support-en.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.app/support.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.babydu.cn/support-en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.babydu.cn/support.html"/>
     </url>
     
     <!-- English Support Page -->
     <url>
-        <loc>https://ecopy.app/support-en.html</loc>
+        <loc>https://ecopy.babydu.cn/support-en.html</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.app/support-en.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.app/support.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.babydu.cn/support-en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.babydu.cn/support.html"/>
     </url>
     
     <!-- Chinese Privacy Page -->
     <url>
-        <loc>https://ecopy.app/privacy.html</loc>
+        <loc>https://ecopy.babydu.cn/privacy.html</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.app/privacy-en.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.babydu.cn/privacy-en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.babydu.cn/privacy.html"/>
     </url>
     
     <!-- English Privacy Page -->
     <url>
-        <loc>https://ecopy.app/privacy-en.html</loc>
+        <loc>https://ecopy.babydu.cn/privacy-en.html</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.app/privacy-en.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ecopy.babydu.cn/privacy-en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ecopy.babydu.cn/privacy.html"/>
     </url>
     
 </urlset>

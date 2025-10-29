@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://ecopy.app/sitemap.xml
+Sitemap: https://ecopy.babydu.cn/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
